@@ -1,0 +1,75 @@
+
+.logo{
+    font-size: 40px;
+    color: red !important;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}   
+#btn{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+#btn:hover{
+    background-color: red;
+    color: white;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+}
+/* home page section */
+
+.home-heading{
+    color: red;
+    margin-top :10px;
+}
+.para{
+    color: black;
+    font-size: 18px;
+    margin-top: 15px;
+    
+}
+  .myimg{ 
+     height: 450px; 
+     margin-top: 20px;
+ } 
+/* .menuimg{
+    width: 210px;
+    height: 220px;
+} */
+.col .menuimg:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+.img-container{
+    overflow: hidden;     
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+/* Media Query */
+
+@media only screen and ((min-width:768px) and ( max-width:1444px)){
+    .menuimg{
+        width: 210px;
+        height: 220px;
+    }    
+}
+
+
+@media only screen and ((max-width:320px) and (min-width:100px)){
+    .myimg{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menuimg{
+        padding: 10px;
+        width: 350px;
+        height: 250px;
+    }
+
+}
+
