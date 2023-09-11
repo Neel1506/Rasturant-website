@@ -1,5 +1,22 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 
-.logo{
+/* NAVBAR SECTION */
+.navbar-nav li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px
+}
+.navbar-nav li a:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid grey;
+    border-radius: 12px;
+}
+.container-fluid .logo{
     font-size: 40px;
     color: red !important;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
@@ -8,6 +25,9 @@
     font-size: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
+}
+#btn a{
+    text-decoration: none;
 }
 #btn:hover{
     background-color: red;
@@ -19,6 +39,16 @@
 }
 /* home page section */
 
+#view-menu a{
+    text-decoration: none;
+    color: red;
+}
+#view-menu:hover a{
+    color: white;
+}
+#view-menu:hover{
+    transform: scale(0.99);
+}
 .home-heading{
     color: red;
     margin-top :10px;
@@ -47,17 +77,76 @@
     max-height: fit-content;
 }
 
-/* Media Query */
+/* ---------MENU PAGE--------- */
 
-@media only screen and ((min-width:768px) and ( max-width:1444px)){
-    .menuimg{
-        width: 210px;
-        height: 220px;
-    }    
+.menu-main{
+    background-color: black;
+}
+
+.menu-box{
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+}
+.menu-box img{
+    width: 100%;
+    height: 90%;
+}
+.menu-detail{
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
 }
 
 
-@media only screen and ((max-width:320px) and (min-width:100px)){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------Media Query----------------------------------- */
+
+@media only screen and (( max-width:1444px)and (min-width:768px)){   
+    .menu-img-id{
+        width: 350px;
+        height: 250px;
+    }
+    .menu-img-id img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+@media only screen and ((max-width:414px) and (min-width:10px)){
     .myimg{
         display: none;
     }
@@ -65,11 +154,19 @@
         display: flex;
         flex-direction: column;
     }
-    .menuimg{
-        padding: 10px;
-        width: 350px;
-        height: 250px;
+    
+    .menu-img-id{
+        /* border: 2px solid orange; */
+        /* margin-left: 25px; */
+        padding: 5px;
+
     }
+    .menu-img-id img{
+        width: 320px;
+        height: 230px;
+    }
+
+ 
 
 }
 
